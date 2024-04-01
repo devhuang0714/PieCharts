@@ -79,7 +79,7 @@ struct Index {
         })
 
         Row() {
-          Button('收入')
+          Button('支出')
             .setButtonStyle(this.billType == 0)
             .onClick(() => {
               this.billType = 0
@@ -87,7 +87,7 @@ struct Index {
             })
           Blank()
             .width(12)
-          Button('支出')
+          Button('收入')
             .setButtonStyle(this.billType != 0)
             .onClick(() => {
               this.billType = 1
